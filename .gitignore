@@ -1,0 +1,17 @@
+.installed.cfg
+bin/*
+downloads/*
+eggs/*
+parts/*
+products/*
+var/*
+egg-info/
+egg-info/*
+develop-eggs/*
+fake-eggs/*
+*.swp
+include/
+lib/
+stamps/
+.mr.developer.cfg
+src/
