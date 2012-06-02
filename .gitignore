@@ -18,3 +18,8 @@ src/
 build/
 development.ini
 production.ini
+app/
+*.sqlite
+logs/
+run/
+mongrel2.conf

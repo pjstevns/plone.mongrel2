@@ -8,6 +8,7 @@ bin/python:
 	virtualenv --clear --distribute --python=python2.6 .
 
 buildout: bin/buildout
+	@mkdir -p run logs tmp 
 	@bin/buildout -v
 
 clean: 

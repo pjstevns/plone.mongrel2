@@ -1,0 +1,29 @@
+#!/bin/env python
+plone_handler = Handler(
+    send_spec='${config:recv}',
+    send_ident='${config:plone_uuid}',
+    recv_spec='${config:send}',
+    recv_ident=''
+)
+
+routes = {
+    '/': plone_handler
+}
+
+main = Server(
+    uuid="${config:mongrel2_uuid}",
+    access_log="/logs/access.log",
+    error_log="/logs/error.log",
+    chroot="./",
+    pid_file="/run/mongrel2.pid",
+    default_host="localhost",
+    name="main",
+    port=6767,
+    hosts=[
+        Host(name="localhost", routes=routes)
+    ]
+)
+
+settings = {"zeromq.threads": 1}
+
+servers = [main]
