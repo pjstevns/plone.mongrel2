@@ -3,6 +3,12 @@
 Plone/WSGI as a Mongrel2 handler
 ================================
 
+How
+---
+
+Clone this repository and run 'make' in the created directory.
+
+
 Why
 ---
 
