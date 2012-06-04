@@ -33,6 +33,17 @@ The buildout requires the usual development chain for Plone:
 - Python-dev
 - GIT
 
+Status
+------
+
+This is just a proof of concept. Don't use this is a production setup just yet.
+
+Issues
+------
+
+POST actions are broken, so no creation of content - yet. Other than that, accessing
+content seems to work just fine.
+
 
 Copyright
 ---------
