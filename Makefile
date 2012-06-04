@@ -10,6 +10,7 @@ bin/python:
 buildout: bin/buildout
 	@mkdir -p run logs tmp 
 	@bin/buildout -v
+	@parts/mongrel2/bin/m2sh load
 
 clean: 
 	@rm -rf eggs/ fake-eggs stamps/ include/ lib/ develop-eggs/ bin/

@@ -22,3 +22,4 @@ production.ini
 logs/
 run/
 mongrel2.conf
+pid/
